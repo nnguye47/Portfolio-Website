@@ -1,3 +1,6 @@
+import Image from "next/image";
+import Link from "next/link";
+
 export default function DashboardLayout({
   children, // will be a page or nested layout
 }: {
@@ -9,15 +12,15 @@ export default function DashboardLayout({
       <nav className="border-blue-600 border-solid border-[5px] bg-teal-300">
         <ul className="flex flex-row justify-around">
           <li className="justify-self-center">
-            <a href="/">
-              <img src="" alt="logo" />
-            </a>
+            <Link href="/">
+              <Image src="" alt="logo" />
+            </Link>
           </li>
           <div className="flex flex-row justify-evenly gap-[50px]">
             <li>
-              <a href="#" className="text-2xl underline">
+              <Link href="#" className="text-2xl underline">
                 Home
-              </a>
+              </Link>
             </li>
             <li>
               <a href="#" className="text-2xl underline">
