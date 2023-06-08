@@ -8,7 +8,7 @@ const example = [
 
 export default function Home() {
   return (
-    <main>
+    <main className="w-screen h-screen">
       <h1 className="text-3xl font-bold text-red-600">This is the home page</h1>
       <div>
         {example.map((project, index) => (
