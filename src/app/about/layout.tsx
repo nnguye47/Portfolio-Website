@@ -16,16 +16,12 @@ export default function DashboardLayout({
               <p>Logo</p>
             </Link>
           </li>
-          <div className="flex flex-row justify-evenly gap-[50px]">
+          <div className="flex flex-row justify-evenly gap-[50px] text-2xl underline">
             <li>
-              <Link href="/home" className="text-2xl underline">
-                Home
-              </Link>
+              <Link href="/home">Home</Link>
             </li>
             <li>
-              <a href="/about" className="text-2xl underline">
-                About
-              </a>
+              <Link href="/about">About</Link>
             </li>
           </div>
         </ul>
