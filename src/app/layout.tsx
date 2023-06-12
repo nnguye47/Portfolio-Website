@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,24 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <section className="">
+          {/* Include shared UI here e.g. a header or sidebar */}
+          <nav className="">
+            <ul className="flex flex-row justify-end w-[90%]">
+              <div className="flex flex-row justify-evenly gap-[50px] text-2xl underline">
+                <li>
+                  <Link href="#About">About</Link>
+                </li>
+                <li>
+                  <Link href="#Projects">Projects</Link>
+                </li>
+              </div>
+            </ul>
+          </nav>
+        </section>
+        {children}
+      </body>
     </html>
   );
 }
