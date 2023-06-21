@@ -2,24 +2,26 @@ import React from "react";
 import Image from "next/image";
 
 type projectProps = {
-  title: string;
-  description: string;
-  image: string;
-  role: string;
+  Title: string;
+  Description: string;
+  Role: string;
+  ImageURL: string;
+  Stack: string;
 };
 
 export default function Card({
-  title,
-  description,
-  image,
-  role,
+  Title,
+  Description,
+  ImageURL,
+  Role,
+  Stack,
 }: projectProps) {
   return (
     <div>
-      <Image src="" alt="exImg" />
-      <p>Project Name</p>
-      <p>Role</p>
-      <p>Description</p>
+      <p>{Title}</p>
+      <p>{Role}</p>
+      <p>{Description}</p>
+      <p>{Stack}</p>
     </div>
   );
 }
