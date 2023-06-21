@@ -1,7 +1,19 @@
 import React from "react";
 import Image from "next/image";
 
-export default function Card() {
+type projectProps = {
+  title: string;
+  description: string;
+  image: string;
+  role: string;
+};
+
+export default function Card({
+  title,
+  description,
+  image,
+  role,
+}: projectProps) {
   return (
     <div>
       <Image src="" alt="exImg" />
