@@ -21,7 +21,6 @@ export default function Projects() {
 
   useEffect(() => {
     handler().then((data: object[]) => {
-      console.log("my data", data);
       setProjectsList(data);
       setDisplayedProject(data[0]);
     });
@@ -40,7 +39,7 @@ export default function Projects() {
 
   return (
     <div>
-      <p className="text-8xl font-bold">Projects</p>
+      <p className="text-8xl font-bold mb-[25px]">Projects</p>
       <div className="flex flex-row justify-evenly">
         <div className="flex flex-col justify-center items-center w-[35%]">
           {projectsList.map((project, index) => (

@@ -24,7 +24,7 @@ export default function ProjectList({
   return (
     <div>
       <button role="button" value={Title} onClick={changeCard}>
-        {Title}
+        <span className="text-3xl">{Title}</span>
       </button>
     </div>
   );
