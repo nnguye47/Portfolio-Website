@@ -15,5 +15,5 @@ export default function Display({
   Role,
   Stack,
 }: projectProps) {
-  return <div> My Display of {Title}</div>;
+  return <div className="w-[55%]"> My Display of {Title}</div>;
 }

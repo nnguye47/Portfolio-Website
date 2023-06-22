@@ -34,16 +34,15 @@ export default function Projects() {
     let toDisplay = projectsList.filter(
       (project) => project.Title === newTitle
     );
-    console.log(toDisplay[0]);
-    console.log("the project title is: ", e.target.value);
+
     setDisplayedProject(toDisplay[0]);
   };
 
   return (
     <div>
-      <h1>Projects</h1>
-      <div className="flex flex-row">
-        <div className="flex flex-col">
+      <p className="text-8xl font-bold">Projects</p>
+      <div className="flex flex-row justify-evenly">
+        <div className="flex flex-col justify-center items-center w-[35%]">
           {projectsList.map((project, index) => (
             <ProjectList
               Title={project.Title}
