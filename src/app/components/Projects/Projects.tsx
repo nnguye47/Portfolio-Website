@@ -29,7 +29,6 @@ export default function Projects() {
   const changeCard = (e: any) => {
     e.preventDefault();
     let newTitle = e.target.value;
-
     let toDisplay = projectsList.filter(
       (project) => project.Title === newTitle
     );
@@ -38,35 +37,37 @@ export default function Projects() {
   };
 
   return (
-    <div>
+    <div id="Projects" className=" w-screen h-screen">
       <p className="text-8xl font-bold mb-[25px]">Projects</p>
-      <div className="flex flex-row justify-evenly">
-        <div className="flex flex-col justify-center items-center w-[35%]">
-          {projectsList.map((project, index) => (
-            <ProjectList
-              Title={project.Title}
-              ImageURL={project.ImageURL}
-              Role={project.Role}
-              Description={project.Description}
-              Stack={project.Stack}
-              key={index + 1}
-              changeCard={changeCard}
-              onClick={function (
-                event: React.MouseEvent<HTMLButtonElement, MouseEvent>
-              ): void {
-                throw new Error("Function not implemented.");
-              }}
-            />
-          ))}
+      {projectsList && displayedProject ? (
+        <div className="flex flex-row justify-evenly h-[80%]">
+          <div className="flex flex-col justify-center items-center w-[35%] h-[80%]">
+            {projectsList.map((project, index) => (
+              <ProjectList
+                Title={project.Title}
+                ImageURL={project.ImageURL}
+                Role={project.Role}
+                Description={project.Description}
+                Stack={project.Stack}
+                key={index + 1}
+                changeCard={changeCard}
+                onClick={function (
+                  event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+                ): void {
+                  throw new Error("Function not implemented.");
+                }}
+              />
+            ))}
+          </div>
+          <Display
+            Title={displayedProject.Title}
+            ImageURL={displayedProject.ImageURL}
+            Role={displayedProject.Role}
+            Description={displayedProject.Description}
+            Stack={displayedProject.Stack}
+          />
         </div>
-        <Display
-          Title={displayedProject.Title}
-          ImageURL={displayedProject.ImageURL}
-          Role={displayedProject.Role}
-          Description={displayedProject.Description}
-          Stack={displayedProject.Stack}
-        />
-      </div>
+      ) : null}
     </div>
   );
 }

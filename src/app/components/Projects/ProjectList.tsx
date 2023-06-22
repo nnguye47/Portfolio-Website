@@ -23,8 +23,13 @@ export default function ProjectList({
 }: displayProps) {
   return (
     <div>
-      <button role="button" value={Title} onClick={changeCard}>
-        <span className="text-3xl">{Title}</span>
+      <button
+        role="button"
+        value={Title}
+        onClick={changeCard}
+        className="text-3xl"
+      >
+        {Title}
       </button>
     </div>
   );

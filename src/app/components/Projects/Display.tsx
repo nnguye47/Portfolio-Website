@@ -15,5 +15,12 @@ export default function Display({
   Role,
   Stack,
 }: projectProps) {
-  return <div className="w-[55%]"> My Display of {Title}</div>;
+  return (
+    <div className="w-[40%] h-[100%] bg-white rounded-lg">
+      <h1>My Display of {Title}</h1>
+      <h2>{Role}</h2>
+      <h3>{Description}</h3>
+      <p>Made with {Stack} </p>
+    </div>
+  );
 }
