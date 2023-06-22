@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 type projectProps = {
   Title: string;
@@ -9,19 +8,12 @@ type projectProps = {
   Stack: string;
 };
 
-export default function Card({
+export default function Display({
   Title,
   Description,
   ImageURL,
   Role,
   Stack,
 }: projectProps) {
-  return (
-    <div>
-      <p>{Title}</p>
-      <p>{Role}</p>
-      <p>{Description}</p>
-      <p>{Stack}</p>
-    </div>
-  );
+  return <div> My Display of {Title}</div>;
 }
