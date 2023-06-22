@@ -37,7 +37,7 @@ export default function Projects() {
   };
 
   return (
-    <div id="Projects" className=" w-screen h-screen">
+    <div id="Projects" className=" w-[100%] h-screen">
       <p className="text-8xl font-bold mb-[25px]">Projects</p>
       {projectsList && displayedProject ? (
         <div className="flex flex-row justify-evenly h-[80%]">

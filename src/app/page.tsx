@@ -6,7 +6,7 @@ import Projects from "./components/Projects/Projects";
 
 export default function Home() {
   return (
-    <main className="relative">
+    <main className="relative w-[80%] mx-auto">
       <Intro />
       <About />
       <Projects />

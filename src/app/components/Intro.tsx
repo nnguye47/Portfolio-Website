@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Intro() {
   return (
-    <div className="w-screen h-screen">
-      <div className="flex flex-col justify-center h-[100%] w-[80%] mx-auto gap-5">
+    <div className="h-screen">
+      <div className="flex flex-col justify-center h-[100%] w-[80%] gap-5">
         <span className="text-3xl">Welcome, my name is </span>
         <span className="text-8xl font-bold">Nam Nguyen</span>
         <div className="w-[60%] text-2xl">
