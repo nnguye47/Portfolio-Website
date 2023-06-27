@@ -22,29 +22,23 @@ export default function Display({
 }: projectProps) {
   return (
     <Card className="bg-[#031632] h-[100%] w-[40%]">
-      <CardActionArea className="h-[100%]">
-        <CardMedia
-          component="img"
-          className="h-[40%]"
-          image={ImageURL}
-          alt="green iguana"
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h3" component="div" color="#34bac2">
-            {Title}
-          </Typography>
-          <Typography variant="h5" color="#34bac2">
-            {Role}
-          </Typography>
-          <Typography variant="body2" color="#34bac2">
-            {Description}
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
+      <CardMedia
+        component="img"
+        className="h-[40%]"
+        image={ImageURL}
+        alt="green iguana"
+      />
+      <CardContent>
+        <Typography gutterBottom variant="h3" component="div" color="#34bac2">
+          {Title}
+        </Typography>
+        <Typography variant="h5" color="#34bac2">
+          {Role}
+        </Typography>
+        <Typography variant="body2" color="#34bac2">
+          {Description}
+        </Typography>
+      </CardContent>
     </Card>
     // <div className="w-[40%] h-[90%] flex flex-col justify-start flex-none rounded-lg shadow-inner shadow-cyan-500/50">
     //   <span className="h-[40%]">image goes here</span>
