@@ -21,7 +21,7 @@ export default function Display({
   Stack,
 }: projectProps) {
   return (
-    <Card className="bg-[#031632] h-[100%] w-[40%]">
+    <Card className="bg-[#34bac2] h-[100%] w-[40%] ">
       <CardMedia
         component="img"
         className="h-[40%]"
@@ -29,13 +29,13 @@ export default function Display({
         alt="green iguana"
       />
       <CardContent>
-        <Typography gutterBottom variant="h3" component="div" color="#34bac2">
+        <Typography gutterBottom variant="h3" component="div" color="#031632">
           {Title}
         </Typography>
-        <Typography variant="h5" color="#34bac2">
+        <Typography variant="h5" color="#031632">
           {Role}
         </Typography>
-        <Typography variant="body2" color="#34bac2">
+        <Typography variant="body2" color="#031632">
           {Description}
         </Typography>
       </CardContent>
